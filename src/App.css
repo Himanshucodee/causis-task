@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+.mainGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(205, 240, 240);
+  font-size: 24px;
+  color: #181e5b;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.column {
+  width: 49vw;
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid grey; */
+  background-color: azure;
+  overflow: hidden;
+}
+
+.column:nth-child(2) {
+  background: #f080807d;
+}
+
+.column:nth-child(1) {
+  background: #90ee9066;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 2px solid #4b1c1c47;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+.card p {
+  font-size: 10px;
+  width: 30vw;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.addButton {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background: #385327;
+  padding: 7px 22px;
+  font-size: 18px;
+  border: 2px solid #f9f9f9;
+  color: #f5f5f5;
+}
+.addForm {
+  height: 50%;
+  width: 50%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 10000;
+}
+.addForm form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  width: 78%;
+  padding: 10px 40px;
+  border: 2px solid darkgrey;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 40px;
+  border: 2px solid darkgrey;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.addnewBtn {
+  background: #385327;
+  padding: 7px 22px;
+  font-size: 18px;
+  border: 2px solid #f9f9f9;
+  color: #f5f5f5;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #f5f5f5;
+  padding: 7px 22px;
+  font-size: 18px;
+  border: 2px solid #f9f9f9;
+  color: #385327;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btnsec {
+  padding-top: 10px;
+}
+
+.btnsec img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.counterInc {
+  background: #fafafa;
+    padding: 4px 10px;
+    margin-top: 20px;
+    font-weight: 600;
+  cursor: pointer;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .card {
+    width: 60%;
+  }
+
+  .header {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .addButton {
+    position: absolute;
+    top: inherit;
+    bottom: 0px;
+  }
+  .addForm {
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 5%;
+    right: 0px;
+    padding: 20px;
+  }
+
+  input {
+    width: 74%;
+  }
+}
